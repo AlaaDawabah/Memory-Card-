@@ -1,0 +1,96 @@
+body{
+    
+    background-color: rgb(238, 238, 214);
+    margin: 0;
+}
+h1{
+    color:rgb(163, 44, 44);
+    text-align: center;
+}
+.content{
+    width:530px;
+    display: flex;
+    justify-content: space-around;
+}
+.score p,.time p{
+    color:rgb(141, 34, 34);
+}
+.container{
+   
+    width:530px;
+    margin: 0 auto;
+    perspective: 1000px;
+  
+    
+}
+.row{
+    display: table-row;
+   
+}
+.inline{
+    display: inline-block;
+    position: relative;
+    width: 120px;
+    margin: 6px;
+    transform: scale(1);
+    transform-style: preserve-3d;
+    transition: transform .5s;
+   
+
+}
+.inline:active{
+    transform: scale(.90);
+    transition:transform .10s;
+}
+img.front{
+    width:100%;
+    height: 100%;
+    position: absolute ;
+    object-fit: cover;
+    backface-visibility: hidden;
+
+}
+img.front:hover{
+    transform: scale(1.05);
+    transition: .4s all ease-in-out;
+  
+  }
+img.back{
+    width:100%;
+    height: 100%; ;
+    object-fit: cover;
+    
+    
+}
+.flex{
+    display: flex;
+    justify-content: center;
+    justify-items: center;
+    /* height: 500px; */
+}
+h1#victory{
+    text-align: center;
+    color:rgb(117, 21, 21);
+    display:none;
+}
+
+button#btn{
+    border: 2px solid rgb(117, 21, 21);
+    border-radius: 45px;
+    font-size: 11px;
+    box-shadow: 0px 8px 15px rgba(119, 5, 5, 0.2);
+    color: rgb(117, 21, 21);
+    padding: 10px 30px;
+    background-color: rgb(238, 238, 214);
+    letter-spacing: 1.5px;
+    transition: all .3s ease-in-out;
+    visibility: hidden;
+
+
+}
+button#btn:hover{
+    color:rgb(238, 238, 214);
+    background-color: darkslategray;
+    transform: scale(1.1);
+    transition: all .3s ease-in-out;
+}
